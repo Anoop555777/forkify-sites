@@ -5,12 +5,12 @@
   "default": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "compile:sass": "node-sass src/sass/main.scss  css/style.css",
     "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Anoop Singh",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
     "node-sass": "^7.0.1",
     "parcel": "^2.4.1"
   },
