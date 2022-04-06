@@ -111,7 +111,7 @@ const controlAddRecipe = async function (newRecipe) {
     recipeView.render(model.state.recipe);
 
     //display success message
-    //addrecipeView.renderMessage();
+    addrecipeView.renderMessage();
     bookmarksView.render(model.state.bookmark);
 
     //change id in url
