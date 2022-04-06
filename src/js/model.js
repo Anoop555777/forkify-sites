@@ -58,6 +58,7 @@ export const loadSearchResults = async function (query) {
         image: recipe.image_url,
         ...(recipe.key && { key: recipe.key }),
       };
+
       //reset page to 1 for another load
     });
 
