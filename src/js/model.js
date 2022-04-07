@@ -41,6 +41,7 @@ export const loadRecipe = async function (id) {
       state.recipe.bookmarked = true;
     else state.recipe.bookmarked = false;
   } catch (err) {
+    console.log(err);
     throw err;
   }
 };
@@ -64,6 +65,7 @@ export const loadSearchResults = async function (query) {
 
     state.search.page = 1;
   } catch (err) {
+    console.log(err);
     throw err;
   }
 };
@@ -140,6 +142,7 @@ export const uploadRecipe = async function (newRecipe) {
     state.recipe = createRecipeObject(data);
     addBookmark(state.recipe);
   } catch (err) {
+    console.log(err);
     throw err;
   }
 };

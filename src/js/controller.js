@@ -43,6 +43,7 @@ const controlRecipe = async function () {
     bookmarksView.update(model.state.bookmark);
   } catch (err) {
     recipeView.renderError();
+    console.log(err);
   }
 };
 
@@ -122,6 +123,7 @@ const controlAddRecipe = async function (newRecipe) {
     }, 2500);
   } catch (err) {
     addrecipeView.renderError(err.message);
+    console.log(err);
   }
 };
 const init = function () {
