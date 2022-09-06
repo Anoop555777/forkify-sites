@@ -5,7 +5,8 @@
   "default": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-scope-hoist"
+    "build": "parcel build index.html --no-scope-hoist",
+    "css": "node-sass src/sass/main.scss  css/style.css"
   },
   "author": "Anoop Singh",
   "license": "ISC",
